@@ -1,37 +1,37 @@
 <!DOCTYPE html> 
 <html> 
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
- 
+
 THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
- 
- 
+
+
 Authors in chronological order of contribution:
 Tim Riedel
 Author 2
- 
+
 Further Information:
 http://cns.utexas.edu/fri
- 
+
 Research Educator:
 Timothy Riedel
 triedel@utexas.edu
- 
+
 Brief Description of Goal of Code:
 blah, blah, blah,
- 
+
 Known Issues:
 blah, blah, blah, blah
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
 -->
-	
-   <head> 
-      <title>App6---HTML5-Canvas</title>  
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" href="w3.css">
-      <link rel="stylesheet" href="w3-colors-flat.css">
-   </head> 
+
+<head> 
+<title>App6---HTML5-Canvas</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="w3-colors-flat.css">
+</head> 
 
 
 <script>
@@ -40,24 +40,24 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 function drawRect() { //This draws a rectangle on the canvas
-	var a_canvas = document.getElementById('a'); //this variable calls the canvas using an id
-	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
-	a_context.fillStyle = "#808080"; // rectangle is grey
-	a_context.fillRect(5, 5, 175, 100);//sets coordinates and placement of rectangle
+var a_canvas = document.getElementById('a'); //this variable calls the canvas using an id
+var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
+a_context.fillStyle = "#808080"; // rectangle is grey
+a_context.fillRect(5, 5, 175, 100);//sets coordinates and placement of rectangle
 
 };
-	function my_name() {//this function displays my name, "Alexandria"
-	var a_canvas = document.getElementById('a'); //this variable calls the canvas using an id
-	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
-	a_context.font = "30px Times New Roman"; // adds font for my name and size
-	a_context.fillStyle = "#000000"; // sets color of text to black
-	a_context.fillText ("Alexandria", 10, 150); //adds name text and coordinates for my name
+function my_name() {//this function displays my name, "Alexandria"
+var a_canvas = document.getElementById('a'); //this variable calls the canvas using an id
+var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
+a_context.font = "30px Times New Roman"; // adds font for my name and size
+a_context.fillStyle = "#000000"; // sets color of text to black
+a_context.fillText ("Alexandria", 10, 150); //adds name text and coordinates for my name
 }; 
-	function my_image() {//this function displays my chosen image
-	var a_canvas =document.getElementById('a'); //this variable calls the canvas using an id
-	var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
-	var longhornimg = document.getElementById('longhornimg');//pulls longhorn image
-	a_context.drawImage(longhornimg, 5, 5, 100, 100);//draws image with size created by 4 numbers
+function my_image() {//this function displays my chosen image
+var a_canvas =document.getElementById('a'); //this variable calls the canvas using an id
+var a_context = a_canvas.getContext('2d'); //sets canvas to 2 dimensional
+var longhornimg = document.getElementById('longhornimg');//pulls longhorn image
+a_context.drawImage(longhornimg, 5, 5, 100, 100);//draws image with size created by 4 numbers
 
 };
 	function clear_canvas() {//this function clears the canvas
@@ -66,51 +66,57 @@ function drawRect() { //This draws a rectangle on the canvas
 };	
 
 
-	
+
 </script>
 
 
 
 <style>	
 .body {
-     margin: 0em;
+margin: 0em;
 }
 .page {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: -100vw;
-    overflow-y: auto;
-    z-index: 0;
-    background-color: hsl(0,0%,100%);
+width: 100vw;
+height: 100vh;
+position: fixed;
+top: 0;
+left: -100vw;
+overflow-y: auto;
+z-index: 0;
+background-color: hsl(0,0%,100%);
 }
-  .page:target {
-    left: 0vw;
-    z-index: 1;
+.page:target {
+left: 0vw;
+z-index: 1;
 }
 </style>
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>App6---HTML5-Canvas</h1>
+<h1>App6---HTML5-Canvas</h1>
 </div>
-	
+
 <div id="content" class="w3-container">
-	<p>Content goes here.</p>
-		
-	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
- 	
-	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+<p>Content goes here.</p>
+
+<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+
+<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 <canvas id="a" width="300" height="190" style="border:2px solid #000000;"></canvas> <!--This adds the canvas to the page-->
 <p> Click the buttons below to create a work of art! </p> <!-- This acts as both an instructional and a space between the rectangle and buttons-->
-	<a onclick="drawRect();" class="w3-btn w3-grey w3-round"> Draw Rectangle!</a> <!--This creates a button for drawing a rectangle on the canvas-->
-	<a onclick="my_name();" class="w3-btn w3-grey w3-round"> Write name!</a> <!--This creates a button that's very excited to write my name!-->
-	<img id='longhornimg' src='image/enzophoto.jpg'alt='Image of Dog' class='hidden' width='0' height='0'> <!-- Image of dog is hidden, but needed for function to show image when button clicked-->
-   	<a onclick="my_image();" class="w3-btn w3-grey w3-round"> Draw image! </a> <!--Creates button that draws the image-->
-	<a onclick="clear_canvas();" class="w3-btn w3-grey w3-round"> Clear Canvas!</a> <!--Creates button that clears canvas-->
+<a onclick="drawRect();" class="w3-btn w3-grey w3-round"> Draw Rectangle!</a> <!--This creates a button for drawing a rectangle on the canvas-->
+<a onclick="my_name();" class="w3-btn w3-grey w3-round"> Write name!</a> <!--This creates a button that's very excited to write my name!-->
+<img id='longhornimg' src='https://as2.ftcdn.net/jpg/02/19/20/97/1000_F_219209702_Fjj5Qn2fN7WnT4mhFbnsYAB9MCgV9PWF.jpg' alt='Image of Longhorn' class='hidden' width='0' height='0'> <!-- Image of longhorn is hidden, but needed for function to show image when button clicked-->
+<a onclick="my_image();" class="w3-btn w3-grey w3-round"> Draw image! </a> <!--Creates button that draws the image-->
+<a onclick="clear_canvas();" class="w3-btn w3-grey w3-round"> Clear Canvas!</a> <!--Creates button that clears canvas-->
 
+
+
+
+<footer class="w3-bottom w3-container w3-flat-carrot">
+<p>DIY!</p>
+</footer>
 
 </body>
 </html>
